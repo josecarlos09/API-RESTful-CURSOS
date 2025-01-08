@@ -1,0 +1,35 @@
+server:
+  port: 8082
+  servlet:
+    context-path: '/plataforma-ead-formacao/'
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs   # Caminho para a documentação da API
+  swagger-ui:
+    path: /swagger-ui/index.html  # Caminho correto para o Swagger UI
+
+# Conexão com a base de dados PostgreSQL
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/plataforma_ead_formacao  # O BD será plataforma_ead_formacao
+    username: postgres
+    password: Postgre
+  jpa:  # Configurações do JPA
+    hibernate:  # Configurações do Hibernate
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      jdbc:
+        lob.non-contextual-creation: true  # Não carregar logs do JDBC
+
+    properties:  # Propriedades do JPA
+      hibernate:
+        show_sql: true  # Exibe o SQL no console (exibe os scripts SQL)
+        format_sql: true  # Formata os comandos SQL para facilitar a leitura
+
+    SQL: debug  # Exibe o SQL gerado pelo Hibernate
+
+    type:
+      descriptor:
+        sql:
+          BasicBinder: trace  # Exibe os parâmetros que são inseridos no SQL
