@@ -18,12 +18,10 @@ A API RESTful de Gestão de Cursos foi desenvolvida para atender às necessidade
 * ### Banco de dados Postgre,
 * ### Padrão RESTful,
 * ### Mapeamento das entidades e seus relacionamentos,
-* ### Visualização por campo com a anotação @JsonView,
 * ### Tratamento de exceptions,
 * ### Validações customizadas,
 * ### Configuração de Paginação e serialização,
 * ### Configuração de CORS,
 * ### Filtros avançados e dinâmicos,
-* ### Hateoas(Hypermedia),
 * ### Padrão de data ISO 8601 UTC,
 * ### Documentação da API.
