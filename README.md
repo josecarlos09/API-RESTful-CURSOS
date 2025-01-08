@@ -10,8 +10,6 @@ A API RESTful de Gestão de Cursos foi desenvolvida para atender às necessidade
 
       -JDK 17 ou superior. 
       -IDE (IntelliJ IDEA, Eclipse ou VS Code). 
-      -Banco de dados (MySQL, PostgreSQL...). 
-      -Maven para gerenciamento de dependências. 
       -Teste da API:  Postman para testar os endpoints 
 * ### Projeto criado com MAVE,
 * ### Uma organização modular, 
